@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Timeline</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{ /*Can be omitted when integrated with main project*/
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: #2e364a;
+        }
+
+        .timeline{
+            position: relative;
+            max-width: 1200px;
+            margin:  100px auto;
+        }
+
+        .container{
+            padding:  10px 50px;
+            position: relative;
+            width: 50%;
+            /*background: rgba(0, 0, 0, 0.3);*/
+            animation: movedown 1s linear forwards;
+            opacity: 0;
+        }
+
+        @keyframes movedown{
+            0%{
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(-30px);
+            }
+        }
+
+        .container:nth-child(1){
+            animation-delay: 0s;
+        }
+        .container:nth-child(2){
+            animation-delay: 1s;
+        }
+        .container:nth-child(3){
+            animation-delay: 2s;
+        }
+        .container:nth-child(4){
+            animation-delay: 3s;
+        }
+        .container:nth-child(5){
+            animation-delay: 4s;
+        }
+        .container:nth-child(6){
+            animation-delay: 5s;
+        }
+    
+
+
+        .text-box{
+            padding: 20px, 30px;
+            background: #fff;
+            position: relative;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .left-container{
+            left: 0;
+        }
+        
+        .right-container{
+            left: 50%;
+        }
+
+        .container img{
+            position: absolute;
+            width: 60px;
+            border-radius: 50%;
+            right: -30px;
+            top: 30px;
+            z-index: 10;
+        }
+
+        .right-container img{
+            left: -30px;
+        }
+
+        .timeline::after{
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background: #fff;
+            top: 0;
+            left: 50%;
+            margin-left: -3px;
+            z-index: -1;
+            animation: moveline 6s linear forwards;
+        }
+
+        @keyframes moveline{
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 100%;
+            }
+        }
+
+        .text-box h2{
+            font-weight: 600;
+        }
+
+        .text-box small{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .left-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 22px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid white;
+            right: -15px;
+        }
+
+        .right-container-arrow{
+            height: 0;
+            width: 0;
+            position: absolute;
+            top: 22px;
+            z-index: 1;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+            left: -15px;
+        }
+
+        @media screen and (max-width:600px){
+            .timeline{
+                margin: 50px auto;
+            }
+            .timeline::after{
+                left: 31px;
+            }
+            .container{
+                width: 100%;
+                padding-left: 80px;
+                padding-right: 25px;
+            }
+            .text-box{
+                font-size: 13px;
+            }
+            .text-box small{
+                margin-bottom: 10px;
+            }
+            .right-container{
+                left: 0;
+            }
+            .left-container img, .right-container img{
+                left: 1px;
+            }
+            .left-container-arrow, .right-container-arrow{
+                border-right: 15px solid white;
+                border-left: 0;
+                left: -15px;
+            }
+        } 
+    </style>
+</head>
+<body>
+    <div class="timeline">
+        <div class="container left-container">
+            <img src="Media/21.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">Texas Instruments and IBM R&D</h2>
+                <small style="color: black;">1994-1999</small>
+                <p style="color: black;">
+                    Lisa Su began her career at Texas Instruments before joining IBM, where she rose to become vice president of semiconductor research and development, pioneering the integration of copper connections with semiconductor chips, resulting in significant performance enhancements and setting new industry standards.
+                </p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <img src="Media/22.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">IBM Emerging Products Division</h2>
+                <small style="color: black;">2000-2007</small>
+                <p style="color: black;" >
+                    Lisa Su served in various leadership roles at IBM, including as technical assistant to the CEO and director of emerging projects, where she spearheaded innovative developments such as biochips and low-power semiconductors, leading to notable achievements like enhancing battery life in handheld devices and collaborating on the creation of the Cell microprocessor, earning her recognition as a "Top Innovator Under 35" by MIT Technology Review in 2001.
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <img src="Media/23.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">Freescale Semiconductor</h2>
+                <small style="color: black;">2007-2011</small>
+                <p style="color: black;">
+                    Lisa Su joined Freescale Semiconductor in June 2007 as Chief Technology Officer, later becoming Senior Vice President and General Manager of the networking and multimedia group, credited with enhancing operations and leading the company to file for an IPO in 2011.
+                </p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <img src="Media/24.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">AMD Appointments</h2>
+                <small style="color: black;">2012-2014</small>
+                <p style="color: black;">
+                    In January 2012, Lisa Su joined AMD as senior vice president and general manager, overseeing global business units and diversifying the company's market beyond PCs, culminating in her appointment as president and CEO on October 8, 2014, where she focused on strategic technology investments and streamlining operations to accelerate the development of new technologies.
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container left-container">
+            <img src="Media/25.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">AMD Diversification</h2>
+                <small style="color: black;">2015-2016</small>
+                <p style="color: black;">
+                    Lisa Su's tenure at AMD saw a significant increase in sales diversification, with non-PC products rising from 10 percent to about 40 percent by February 2015, followed by a strategic shift towards high-performance computing and graphics technologies, including the development of new FinFET-based chips, leading to a spike in AMD's share value in July 2016 due to successful execution of the company's comeback plan and strategic deals such as licensing server chip designs in China.
+                </p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+        <div class="container right-container">
+            <img src="Media/26.png" alt="">
+            <div class="text-box">
+                <h2 style="color: black;">Ryzen</h2>
+                <small style="color: black;">2017-Present</small>
+                <p style="color: black;">
+                    Lisa Su's leadership at AMD led to a surge in CPU market share following the launch of Zen chips in 2017, with Ryzen CPUs receiving positive reviews for their high thread counts and competitive pricing, culminating in Su becoming the first woman to top The Associated Press' annual CEO compensation survey in 2019, and later assuming the role of Chair after overseeing the completion of a reported $49 billion acquisition of Xilinx in February 2022.
+                </p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

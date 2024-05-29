@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d4e0494dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="containerVG">
+        <h1>The Impact of Lisa Su</h1>
+        <a href="Index.html">
+            <img src="Media/13.png" class="back-btn">
+        </a>
+        <div class="rowVG">
+            <div class="colVG">
+                <div class="feature-img">
+                    <img src="Media/10.jpg" width="100%">
+                    <img src="Media/11.png" class="play-btn"
+                    onclick="playVideo('Media/Rocket League.mp4')"> <!-----Insert Lisa Video------>
+                </div>
+            </div>
+            <div class="colVG">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/3.jpg">
+                        <img src="Media/11.png" class="play-btn"
+                        onclick="playVideo('Media/Rocket League.mp4')"> <!--Change video-->
+                    </div>
+                    <p>Hello</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/3.jpg">
+                        <img src="Media/11.png" class="play-btn"
+                        onclick="playVideo('Media/Rocket League.mp4')"> <!--Change video-->
+                    </div>
+                    <p>Hello</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/3.jpg">
+                        <img src="Media/11.png" class="play-btn"
+                        onclick="playVideo('Media/Rocket League.mp4')"> <!--Change video-->
+                    </div>
+                    <p>Hello</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls id="video1"
+        src="Media/Rocket League.mp4" type = "video/mp4">
+        </video>
+        <img src="Media/12.png" class="close-btn" onclick="stopVideo()">
+    </div>
+
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var video1 = document.getElementById("video1");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+
+        function playVideo(file){
+            video1.src = file;
+            videoPlayer.style.display = "block";
+        }
+    </script>
+</body>
+</html>

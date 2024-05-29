@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Su</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d4e0494dc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research & Achievements</a></li>
+                <li><a href="#contributions">Impact & Contributions</a></li>
+                <!--<li><a href="#">Publications</a></li>-->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Chair and Chief Executive Officer</p>
+            <h1><span>Dr.</span>Lisa Su</h1>
+        </div>
+    </div>
+    </div>
+
+<!-------------About---------------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/13.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">Lisa Su</h1>
+                <p style="font-size: 160%;">
+                    Dr. Lisa Su is the Chair and CEO of AMD (Advanced Micro Devices), 
+                    a leading semiconductor and computer processor manufacturer. 
+                    Under her leadership, AMD has become a leader in high-performance 
+                    computing and one of the fastest-growing semiconductor companies globally. 
+                    She has been instrumental in integrating AMD's business units, sales, 
+                    global operations, and infrastructure teams into a cohesive organization 
+                    responsible for all aspects of product strategy and execution.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+                    <p class="tab-links" onclick="opentab('career')"> Career Timeline</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <p style="font-size: 180%;">
+                        Lisa Tzwu-Fang Su, born in November 1969 in Tainan, 
+                        Taiwan, immigrated to the United States at age 3. 
+                        Raised in a family that emphasized math and science, 
+                        she developed an early interest in engineering. 
+                        Su attended the Bronx High School of Science in New York 
+                        City and then pursued electrical engineering at the 
+                        Massachusetts Institute of Technology (MIT).<br> <br>
+                        During her undergraduate years, she worked on semiconductor 
+                        research projects and interned at Analog Devices, sparking 
+                        her interest in the field. She earned her bachelor's and 
+                        master's degrees from MIT, followed by a PhD in electrical 
+                        engineering, focusing on silicon-on-insulator (SOI) 
+                        technology to enhance transistor efficiency. Su's thesis 
+                        was titled "Extreme-submicrometer silicon-on-insulator 
+                        (SOI) MOSFETs."
+                    </p>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <p style="font-size: 150%;">
+                            Beginning her professional journey at IBM, Su held 
+                            various technical and business roles over 13 years, 
+                            contributing significantly to cutting-edge technologies. 
+                            In 2012, she joined Advanced Micro Devices (AMD), quickly 
+                            rising to become President and CEO in 2014. Su's leadership 
+                            at AMD led to a remarkable resurgence, marked by innovative 
+                            strategies and product development, notably the Ryzen 
+                            processors.
+                            <br>
+                            <br>
+
+                            Su has served on the boards of Analog Devices, Cisco Systems, Inc., 
+                            the Global Semiconductor Alliance, and the U.S. Semiconductor 
+                            Industry Association. As of 2016 she has published over forty 
+                            technical articles and coauthored a book chapter discussing 
+                            next-generation consumer electronics.
+                            <br>
+                            <br>
+
+                            Dr. Su emphasizes innovation, collaboration, and inclusivity, 
+                            advocating for diversity in the tech industry and promoting 
+                            STEM education. Her achievements have earned her numerous 
+                            accolades, including recognition as one of Fortune's "Most 
+                            Powerful Women" and Forbes' "World's 100 Most Powerful Women." 
+                            Su's career serves as an inspiration, highlighting the 
+                            transformative power of vision and perseverance in the fast-paced 
+                            world of technology.
+                        </p>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="career">
+                    <ul>
+                        <li><span>1994-1999</span><br>Lisa Su began her career at Texas Instruments before joining IBM, where she rose to become vice president of semiconductor research and development, pioneering the integration of copper connections with semiconductor chips, resulting in significant performance enhancements and setting new industry standards.</li>
+                        <li><span>2000-2007</span><br>Lisa Su served in various leadership roles at IBM, including as technical assistant to the CEO and director of emerging projects, where she spearheaded innovative developments such as biochips and low-power semiconductors, leading to notable achievements like enhancing battery life in handheld devices and collaborating on the creation of the Cell microprocessor, earning her recognition as a "Top Innovator Under 35" by MIT Technology Review in 2001.</li>
+                        <li><span>2007-2011</span><br>Lisa Su joined Freescale Semiconductor in June 2007 as Chief Technology Officer, later becoming Senior Vice President and General Manager of the networking and multimedia group, credited with enhancing operations and leading the company to file for an IPO in 2011.</li>
+                        <li><span>2012-2014</span><br>In January 2012, Lisa Su joined AMD as senior vice president and general manager, overseeing global business units and diversifying the company's market beyond PCs, culminating in her appointment as president and CEO on October 8, 2014, where she focused on strategic technology investments and streamlining operations to accelerate the development of new technologies.</li>
+                        <li><span>2015-2016</span><br>Lisa Su's tenure at AMD saw a significant increase in sales diversification, with non-PC products rising from 10 percent to about 40 percent by February 2015, followed by a strategic shift towards high-performance computing and graphics technologies, including the development of new FinFET-based chips, leading to a spike in AMD's share value in July 2016 due to successful execution of the company's comeback plan and strategic deals such as licensing server chip designs in China.</li>
+                        <li><span>2017-Present</span><br>Lisa Su's leadership at AMD led to a surge in CPU market share following the launch of Zen chips in 2017, with Ryzen CPUs receiving positive reviews for their high thread counts and competitive pricing, culminating in Su becoming the first woman to top The Associated Press' annual CEO compensation survey in 2019, and later assuming the role of Chair after overseeing the completion of a reported $49 billion acquisition of Xilinx in February 2022.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------Research & Achievements----------------------------->
+<div id="research">
+    <div class="container">
+        <h1 class="subtitle">Research & Achievements</h1>
+        <div class="research-list">
+            <div>
+                <i class="fa-solid fa-plug"></i> <!--Icons-->
+                <h2>Copper Interconnects</h2>
+                <br>
+                <p> During her time at IBM, Dr. Su played a crucial 
+                    role in developing a method to integrate copper 
+                    connections with semiconductor chips. This 
+                    breakthrough, introduced in 1998, set new 
+                    industry standards and led to chips that were up 
+                    to 20% faster than previous versions.</p>
+                    <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microchip"></i>
+                <h2>Microprocessor Innovation</h2>
+                <br>
+                <p>Dr. Su led innovative projects at IBM, including 
+                    the development of a microprocessor that enhanced 
+                    battery life in handheld devices. This innovation 
+                    helped to advance mobile computing technology and 
+                    improve the efficiency of portable electronic 
+                    devices.</p>
+                    <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-sim-card"></i>
+                <h2>Biochips and Low-Power Semiconductors:</h2>
+                <br>
+                <p>As director of emerging projects at IBM, Dr. Su focused 
+                    on developing biochips and low-power, broadband 
+                    semiconductors. These technologies have applications 
+                    in various fields, including healthcare, 
+                    telecommunications, and consumer electronics.</p>
+                    <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-memory"></i>
+                <h2>Collaboration on the Cell Microprocessor</h2>
+                <br>
+                <p>Dr. Su represented IBM in a collaboration with Sony 
+                    and Toshiba to create the Cell microprocessor, which 
+                    powered devices like the Sony PlayStation 3. This 
+                    collaboration resulted in the development of a 
+                    high-performance microprocessor architecture with 
+                    applications in gaming and multimedia.</p>
+                    <br>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-flag"></i>
+                <h2>Strategic Leadership at AMD</h2>
+                <br>
+                <p>As president and CEO of AMD, Dr. Su implemented a 
+                    strategic turnaround plan that focused on 
+                    high-performance computing and graphics technologies. 
+                    Under her leadership, AMD launched the Zen architecture, 
+                    which significantly improved CPU performance and helped 
+                    to regain market share in the semiconductor industry.</p>
+                    <br>
+                <a href="#">Learn More</a>
+            </div>
+        </div>   
+    </div>
+</div>
+<!---------------Impact & Contributions--------------->
+<div id="contributions">
+    <div class="container">
+        <h1 class="subtitle">Impact & Contributions</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="1.jpg" alt="">
+                <div class="layer">
+                    <h3>Innovation in Semiconductor Technology</h3>
+                    <!--<p>Dr. Su has been instrumental in advancing semiconductor 
+                        technology throughout her career. She played a crucial 
+                        role in the development of copper interconnects, which 
+                        improved chip performance and set new industry standards. 
+                        Additionally, she has been involved in the development 
+                        of high-performance microprocessors and low-power 
+                        semiconductors that have been essential for various 
+                        applications in computing, telecommunications, and 
+                        consumer electronics.</p>-->
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="LisaHome.jpg" alt="">
+                <div class="layer">
+                    <h3>Market Expansion and Diversification</h3>
+                    <!--<p>Dr. Su has been instrumental in expanding AMD's market 
+                        beyond traditional PC markets. She secured partnerships 
+                        with major technology companies like Microsoft and Sony 
+                        to integrate AMD chips into gaming consoles like Xbox 
+                        and PlayStation, significantly expanding AMD's presence 
+                        in the gaming market. Additionally, her focus on 
+                        high-performance computing and graphics technologies 
+                        has helped AMD gain market share in data centers, 
+                        immersive platforms, and other emerging markets.</p>-->
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="10.jpg" alt="">
+                <div class="layer">
+                    <h3>Recognition and Leadership in the Tech Industry</h3>
+                    <!--<p>Dr. Su's leadership and contributions have earned her 
+                        widespread recognition in the technology industry. 
+                        She has been named one of Fortune's "Most Powerful 
+                        Women in Business" multiple times and has received 
+                        numerous awards for her achievements, including being 
+                        named one of the "Top Innovators Under 35" by MIT 
+                        Technology Review. Her leadership at AMD has also been 
+                        credited with driving the company's resurgence and 
+                        making it a key player in the semiconductor industry.</p> -->
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!---------------Contact--------------->
+<div class="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1>Contact Me:</h1>
+            <p><i class="fa-solid fa-envelope"></i>lisasu@amd.org</p>
+            <p><i class="fa-solid fa-phone"></i>+866 09900990</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lisa-su-3ba3364/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/lisasu?lang=en"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <a href="Profile.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> 2024</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzT6DJyYfOi3UJfSRdkbgLjHqIkivTDmRlDXRg-OuV1uVD92ai109rnoOmdEQcO_s0/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
+
+<!--<iframe src="Test2.html" width="600" height="400"></iframe>

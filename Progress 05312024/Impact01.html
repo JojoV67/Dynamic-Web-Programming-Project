@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Su</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .containerAch{
+            background-color: #1B272E;
+        }
+    </style>
+</head>
+<body>
+        <div class="containerAch">
+            <a href="Index.html#contributions">
+                <img src="Media/16.png" class="back-btn">
+            </a>
+            <!-- <div class="navbarAch">
+               <img src="images/logo.png" class="logo">
+               <nav>
+                   <ul id="sidemenu">
+                       <li><a href="#header">Home</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#research">Research & Achievements</a></li>
+                       <li><a href="#contributions">Impact & Contributions</a></li>
+                       <li><a href="#contact">Contact</a></li>
+                   </ul>
+               </nav>
+               <img src="images/menu.png" class="menu-icon"> 
+            </div>-->
+
+            <div class="rowAch">
+                <div class="colAch">
+                    <div class="text-boxAch">
+                        <h1>Innovation in Semiconductor Technology</h1> 
+                        <br>
+                        <h3>IBM Research:</h3> <!--Changes made 05/25-->
+                        <h5>
+                            <!--Lisa Su has made significant contributions to the semiconductor industry, particularly through her role as the CEO of AMD. She is widely recognized for turning around AMD's fortunes and transforming it into a key player in the semiconductor market. Under her leadership, AMD has seen substantial growth in both revenue and market share, especially with the successful launch of the Ryzen and EPYC processor lines.-->
+                            <ul>
+                                <li>
+                                    Developed copper technology for semiconductor interconnects, revolutionizing the industry with improved performance and reduced power consumption.
+                                </li>
+                                <li>
+                                    Worked on silicon-on-insulator (SOI) technology, enhancing high-performance, low-power microelectronics.
+                                </li>
+                            </ul>
+                        </h5>
+                        <br>
+                        <h3>MIT Research:</h3>
+                        <h5>
+                            <ul>
+                                <li>
+                                    Conducted doctoral research focusing on SOI technology, contributing to advancements in semiconductor materials and processes.
+                                </li>
+                            </ul>
+                        </h5>
+                        <br>
+                        <h3>AMD Innovations:</h3>
+                        <h5>
+                            <ul>
+                                <li>
+                                    Led the development and launch of AMD's Ryzen processors, known for their high performance and energy efficiency.
+                                </li>
+                                <li>
+                                    Spearheaded the creation of EPYC server processors, significantly improving AMD's competitiveness in the server market.
+                                </li>
+                                <li>
+                                    Pushed for advancements in high-performance computing (HPC), graphics processing units (GPUs), and adaptive computing technologies.
+                                </li>
+                            </ul>
+                        </h5>
+                        <br>
+                        <h3>Technical Publications:</h3>
+                        <h5>
+                            <ul>
+                                <li>
+                                    Authored numerous papers on semiconductor device research, covering topics such as advanced transistor designs and integration of new materials in microprocessors.
+                                </li>
+                            </ul>
+                        </h5>
+                    </div>
+                </div>
+                <div class="colAch">
+                    <div class="gallery-boxAch">
+                        <img src="Media/pic1.jpg" id="galleryAch">
+
+                        <ul>
+                            <li class="btnAch">01</li>
+                            <li class="btnAch active">02</li>
+                            <li class="btnAch">03</li>
+                            <li class="btnAch">04</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+    var btn = document.getElementsByClassName("btnAch");
+    var gallery = document.getElementById("galleryAch");
+
+    var images = new Array(
+        "Media/pic1.jpg",
+        "Media/pic2.jpg",
+        "Media/pic3.jpg",
+        "Media/pic8.png"
+    );
+
+    for (let i=0; i<btn.length; i++){
+        btn[i].onclick = function()
+        {
+            galleryAch.src = images[i];
+            // let current = document.getElementsByClassName("active");
+            // current[0].className = current[0].className.replace("active", "");
+            // this.className += "active";
+
+            var current = document.querySelector(".active");
+                current.classList.remove("active");
+                this.classList.add("active");
+        };
+    }
+</script>
+</body>
+</html>
