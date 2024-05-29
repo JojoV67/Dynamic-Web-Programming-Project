@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Legacy of Lisa Su</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .video-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-player {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+    <script>
+        function stopVideo() {
+            var videoPlayer = document.getElementById("videoPlayer");
+            var videoFrame = document.getElementById("videoFrame");
+            videoPlayer.style.display = "none";
+            videoFrame.src = "";
+        }
+
+        function playVideo(youtubeId) {
+            var videoPlayer = document.getElementById("videoPlayer");
+            var videoFrame = document.getElementById("videoFrame");
+            videoFrame.src = "https://www.youtube.com/embed/" + youtubeId + "?autoplay=1";
+            videoPlayer.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="containerVG">
+        <h1>The Legacy of Lisa Su</h1>
+        <a href="index.html#contributions">
+            <img src="Media/16.png" class="back-btn">
+        </a>
+        <div class="rowVG">
+            <div class="colVG">
+                <div class="feature-img">
+                    <img src="Media/AMD Photo.png" width="100%">
+                    <img src="Media/14.png" class="play-btn" width="100%" onclick="playVideo('bmrqPJigiVc')">
+                </div>
+            </div>
+            <div class="colVG">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/Forbes.jpg">
+                        <img src="Media/14.png" class="play-btn" onclick="playVideo('k-J72u1yQU4')">
+                    </div>
+                    <p class="paragraphs">
+                        Lisa Su Made AMD Billions - Now She Wants To Dominate The Market With AI <br>By: Forbes
+                    </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/LisaHome.jpg">
+                        <img src="Media/14.png" class="play-btn" onclick="playVideo('amBe2bofVas')">
+                    </div>
+                    <p class="paragraphs">
+                        How Lisa Su Turned AMD Around <br> By: Fortune Magazine
+                    </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="Media/CNBC.jpg">
+                        <img src="Media/14.png" class="play-btn" onclick="playVideo('_gLm0Jo0cnk')">
+                    </div>
+                    <p class="paragraphs">
+                        How Chip Giant AMD Finally Caught Intel <br>By: CNBC
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <iframe id="videoFrame" class="video-container" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="Media/15.png" class="close-btn" onclick="stopVideo()">
+    </div>
+</body>
+</html>
+
+    
