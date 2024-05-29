@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa Su</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="containerAch">
+            <a href="Index.html#contributions">
+                <img src="Media/16.png" class="back-btn">
+            </a>
+
+            <div class="rowAch">
+                <div class="colAch">
+                    <div class="text-boxAch">
+                        <h1>Market Expansion and Diversification</h1>
+                        <br><br>
+                        <h3>Turnaround of AMD:</h3> <!--Changes made 05/25-->
+                        <h5>
+                            <ul>
+                                <li>
+                                    Led AMD through a significant financial and technological transformation, making it a strong competitor against Intel and NVIDIA.
+                                </li>
+                                <li>
+                                    Drove the company's stock price to increase substantially, reflecting its improved market position and financial health.
+                                </li>
+                            </ul>
+                        </h5>
+                        <br>
+                        <h3>Product Innovations:</h3>
+                        <h5>
+                            <ul>
+                                <li>
+                                    Oversaw the successful launch and adoption of Ryzen processors, which gained widespread acclaim for their performance and efficiency.
+                                </li>
+                                <li>
+                                    Expanded AMD's presence in the server market with the EPYC line of processors, targeting data centers and enterprise applications.
+                                </li>
+                            </ul>
+                        </h5>
+                        <br>
+                        <h3>Expansion into New Markets:</h3>
+                        <h5>
+                            <ul>
+                                <li>
+                                    Pushed for diversification of AMD's product portfolio, including advancements in GPUs and adaptive computing.
+                                </li>
+                                <li>
+                                    Enhanced AMD's capabilities in high-performance computing and AI, positioning the company as a key player in these growing markets.
+                                </li>
+                            </ul>
+                        </h5>
+                    </div>
+
+                </div>
+                <div class="colAch">
+                    <div class="gallery-boxAch">
+                        <img src="Media/Mkt1.jpg" id="galleryAch">
+
+                        <ul>
+                            <li class="btnAch">01</li>
+                            <li class="btnAch active">02</li>
+                            <li class="btnAch">03</li>
+                            <li class="btnAch">04</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script>
+    var btn = document.getElementsByClassName("btnAch");
+    var gallery = document.getElementById("galleryAch");
+
+    var images = new Array(
+        "Media/Mkt1.jpg",
+        "Media/Mkt2.jpg",
+        "Media/Mkt3.jpg",
+        "Media/Mkt4.jpg"
+    );
+
+    for (let i=0; i<btn.length; i++){
+        btn[i].onclick = function()
+        {
+            galleryAch.src = images[i];
+            // let current = document.getElementsByClassName("active");
+            // current[0].className = current[0].className.replace("active", "");
+            // this.className += "active";
+
+            var current = document.querySelector(".active");
+                current.classList.remove("active");
+                this.classList.add("active");
+        };
+    }
+</script>
+</body>
+</html>
