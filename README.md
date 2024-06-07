@@ -1,4 +1,5 @@
 Purpose:
+<br>
 Our mission is to create a dynamic webpage honoring Dr. Lisa Su, a leader in the microprocessor chip industry. With thoughtful design, we'll showcase her contributions, allowing users to explore her pioneering work. Our platform fosters connections, empowering users to engage with Dr. Su's legacy meaningfully.
 
 Members:
