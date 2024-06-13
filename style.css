@@ -902,7 +902,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Media/PhoneBG4.png); /*It needs to be changed because of the format size*/
+        background-image: url(PhoneBG4.png); /*It needs to be changed because of the format size*/
         background-size: cover; /* Ensures the image covers the entire background area */
         background-position: center; /* Centers the image within the background area */
         background-repeat: no-repeat; /* Prevents the image from repeating */
