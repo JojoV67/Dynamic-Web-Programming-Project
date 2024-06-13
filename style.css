@@ -910,7 +910,7 @@ nav .fas{
 
     .fas{
         position: relative;
-        left: 200px;
+        left: 150px;
         top: -1px;
     }
     .header-text{
@@ -921,6 +921,7 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
+
 
     nav .fas{
         display: block;
