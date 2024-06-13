@@ -13,6 +13,8 @@
 
         .video-player {
             display: none;
+            visibility: hidden;
+            opacity: 0;
             position: fixed;
             top: 50%;
             left: 50%;
@@ -23,14 +25,32 @@
             z-index: 1000;
             text-align: center;
             padding-top: 20px;
+            transition: visibility 0s, opacity 0.5s ease-in-out;
+        }
+
+        .video-player.active {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .play-btn {
+            cursor: pointer;
+        }
+
+        .close-btn {
+            cursor: pointer;
         }
     </style>
     <script>
         function stopVideo() {
             var videoPlayer = document.getElementById("videoPlayer");
             var videoFrame = document.getElementById("videoFrame");
-            videoPlayer.style.display = "none";
-            videoFrame.src = "";
+            videoPlayer.classList.remove("active");
+            setTimeout(() => {
+                videoPlayer.style.display = "none";
+                videoFrame.src = "";
+            }, 500); // Match this duration with the transition duration
         }
 
         function playVideo(youtubeId) {
@@ -38,6 +58,9 @@
             var videoFrame = document.getElementById("videoFrame");
             videoFrame.src = "https://www.youtube.com/embed/" + youtubeId + "?autoplay=1";
             videoPlayer.style.display = "block";
+            setTimeout(() => {
+                videoPlayer.classList.add("active");
+            }, 10); // Small delay to ensure the display change takes effect
         }
     </script>
 </head>
@@ -92,5 +115,3 @@
     </div>
 </body>
 </html>
-
-    

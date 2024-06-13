@@ -751,7 +751,7 @@ nav ul li a:hover::after{
     margin-top: 100px;
 }
 
-.text-boxAch h1{ /*Changes made 05/25*/
+.text-boxAch h1{ 
     color: #fff;
     font-size: 35px;
     text-align: center;
@@ -759,13 +759,13 @@ nav ul li a:hover::after{
     left: 450px;
 }
 
-.text-boxAch h5{ /*Changes made 05/25*/
+.text-boxAch h5{ 
     color: #fff;
     font-size: 16px;
     margin-top: 30px;
     text-align: justify;
 }
-.gallery-boxAch{ /*Changes made 05/25*/
+.gallery-boxAch{ 
     max-width: 700px;
     margin: auto;
     position: relative;
@@ -902,8 +902,14 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(PhoneBG.png); /*It needs to be changed because of the format size*/
+        background-image: url(Media/PhoneBG.png); /*It needs to be changed because of the format size*/
     }
+
+    .logo{
+        position: relative;
+            left: -50px;
+    }
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -911,6 +917,14 @@ nav .fas{
 
     .header-text h1{
         font-size: 30px;
+    }
+
+    .header-text b{
+        font-size: 100%;
+    }
+
+    .header-text p{
+        font-size: 35px;
     }
 
     nav .fas{
@@ -931,7 +945,7 @@ nav .fas{
     }
     nav ul li{
         display: block;
-        margin: 25 px;
+        margin: 25px;
     }
 
     nav ul .fas{
@@ -944,16 +958,45 @@ nav .fas{
         font-size: 40px;
     }
 
+    /*---About---*/
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
 
     .about-col-1{
         margin-bottom: 30px;
+        position: relative;
+            left: 60px;
     }
 
     .about-col-2{
         font-size: 14px;
+        position: relative;
+            left: 80px;
+            word-spacing: 1px;
+    }
+
+    .about-col-2 h1{
+        text-align: center;
+            position: relative;
+            left: 110px;
+    }
+
+    .btnTL{
+        position: relative;
+            left: 70px;
+    }
+
+    /*Contact*/
+    #contact .container h1{
+        position: relative;
+            left: 70px;
+        text-align: center;
+    }
+
+    #careerTimeline .timeline{
+        position: relative;
+        left: 65px;
     }
 
     .tab-links{
@@ -965,14 +1008,32 @@ nav .fas{
         flex-basis: 100%;
     }
 
+    .contact-right{
+        width: 500px;
+        flex-basis: 120%;
+    } 
+
+    /*.contact-right .btn.btn2{
+        position: relative;
+            left: 185px;
+    }*/
+
     .copyright{
         font-size: 14px;
-        width: 120%;
+        width: 140%;
     }
 
     .back-btn{
         position: absolute;
         left: 25px;
+        top: 25px;
+    }
+
+    /*Research and Achievements*/
+    #research .subtitle{
+        position: relative;
+            left: 80px;
+        text-align: center;
     }
 
     .gallery-boxAch{
@@ -984,7 +1045,7 @@ nav .fas{
         text-align: center;
     }
 
-    .text-boxAch h1{
+    .text-boxAch h2{
         text-align: center;
         position: relative;
         left: 25px;
@@ -995,6 +1056,24 @@ nav .fas{
         position: relative;
         left: 25px;
         word-spacing: 1;
+    }
+
+    /*Contributions and Video Gallery*/
+    #contributions .subtitle{
+        position: relative;
+            left: 80px;
+        text-align: center;
+    }
+
+    .work-list{
+        position: relative;
+            left: 50px;
+        width: 120%;
+    }
+
+    #contributions .btn{
+        position: relative;
+            left: 70px;
     }
 
     .containerVG{
@@ -1028,4 +1107,15 @@ input[type="text"], textarea {
 }
 input[type="email"], textarea {
     background-color : #4f535d; 
+}
+
+/*--------------------Transitions-------------------------*/
+.transition {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.transition-visible {
+    opacity: 1;
+    transform: translateY(0);
 }
