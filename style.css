@@ -1041,6 +1041,12 @@ nav .fas{
         text-align: center;
     }
 
+    .text-boxAch h1{
+        text-align: center;
+        position: relative;
+        left: 25px;
+    }
+
     .text-boxAch h2{
         text-align: center;
         position: relative;
